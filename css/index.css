@@ -25,7 +25,21 @@ h1 {
   font-family: 'Bad Script', cursive;
   text-align: center;
 }
-/* style home */
+/* style users */
+.list-user {
+  margin-bottom: 10px;
+}
+.list-user .name {
+  font-weight: 700;
+}
+.list-user .username {
+  font-style: italic;
+}
+.list-user .company {
+  font-size: 12px;
+  display: block;
+}
+/* style posts */
 .post-title {
   font-weight: 700;
   display: block;

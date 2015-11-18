@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Blog Angular</title>
+        <title>Social Angular</title>
         
         <!-- fonts -->
         <link href='https://fonts.googleapis.com/css?family=Bad+Script' rel='stylesheet' type='text/css'>
@@ -18,21 +18,22 @@
     </head>
     <body>
         
-        <h1>Blog Angular</h1>
+        <h1>Social Angular</h1>
        
         <section id="posts" class="posts box-content">
-            <!--
-            <ul>
-                <li>
-                    <a href="#">
-                        <h2 class="title">Title teste</h2>
-                        <p class="content">ifweif oweif oweinf oiwenf oiwenf</p>
-                    </a>
-                </li>
-            </ul>
-            -->
             
-            <div ng-app="myApp" ng-controller="customersCtrl"> 
+            <div ng-app="myApp" ng-controller="showusers"> 
+
+                <ul>
+                  <li class="list-user" ng-repeat="user in users">
+                    <span class="name">{{ user.name }}</span>&nbsp;<i class="username">({{ user.username }})</i>
+                    <span class="company">Email: {{ user.company.name }}</span>
+                  </li>
+                </ul>
+                
+            </div>
+            
+            <!-- <div ng-app="myApp" ng-controller="customersCtrl"> 
 
                 <ul>
                   <li ng-repeat="x in data">
@@ -44,6 +45,7 @@
                 </ul>
                 
             </div>
+            -->
             
             
         </section>
